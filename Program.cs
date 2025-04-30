@@ -9,6 +9,19 @@ namespace Documentation_back_end
 
             // Add services to the container.
 
+            //Add Cors policy
+            var myAllowSpecificOrigins = "_myAllowSpecificOrigins";
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: myAllowSpecificOrigins,
+                    policy =>
+                    {
+                        policy.WithOrigins("http://localhost:3000")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                    });
+            });
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -24,6 +37,8 @@ namespace Documentation_back_end
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors(myAllowSpecificOrigins);
 
             app.UseAuthorization();
 
