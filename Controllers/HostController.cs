@@ -29,6 +29,60 @@ namespace Documentation_back_end.Controllers
                 return Enumerable.Empty<Domain.Host>();
             }
         }
+        [AllowAnonymous]
+        [HttpPost("add")]
+        public async Task<IActionResult> Add(string name)
+        {
+            try
+            {
+                var result = await _hostService.Add(name);
+                if (result is OkObjectResult okResult)
+                {
+                    return okResult;
+                }
+                else if (result is BadRequestObjectResult badRequestResult)
+                {
+                    return badRequestResult;
+                }
+                else
+                {
+                    return StatusCode(500, "Internal server error");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while adding a host.");
+                return StatusCode(500, "Internal server error");
+
+            }
+
+        }
+        [AllowAnonymous]
+        [HttpDelete("delete")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var result = await _hostService.Delete(id);
+                if (result is OkObjectResult okResult)
+                {
+                    return okResult;
+                }
+                else if (result is NotFoundObjectResult notFoundResult)
+                {
+                    return notFoundResult;
+                }
+                else
+                {
+                    return StatusCode(500, "Internal server error");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while deleting a host.");
+                return StatusCode(500, "Internal server error");
+            }
+        }
 
 
 
