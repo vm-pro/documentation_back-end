@@ -19,7 +19,7 @@ namespace Documentation_back_end.Data
         {
             var host = new Domain.Host
             {
-                name = name
+                Name = name
             };
             _context.Hosts.Add(host);
             var response = await _context.SaveChangesAsync();
