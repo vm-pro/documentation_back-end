@@ -9,7 +9,13 @@ namespace Documentation_back_end.Data
         {
         }
         public virtual DbSet<Domain.Host> Hosts { get; set; }
-        
+        public virtual DbSet<AccessMethod> AccessMethods { get; set; }
+        public virtual DbSet<Application> Applications { get; set; }
+        public virtual DbSet<ApplicationCategory> ApplicationCategories { get; set; }
+        public virtual DbSet<ApplicationHost> ApplicationHosts { get; set; }
 
-    }
+
+
+
+}
 }

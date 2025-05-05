@@ -4,6 +4,7 @@ using Documentation_back_end.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Documentation_back_end.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250505191804_DB")]
+    partial class DB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,7 +51,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("AccessMethod", (string)null);
+                    b.ToTable("AccessMethod");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Application", b =>
@@ -75,7 +78,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("LicenceId");
 
-                    b.ToTable("Application", (string)null);
+                    b.ToTable("Application");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.ApplicationCategory", b =>
@@ -92,7 +95,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ApplicationCategory", (string)null);
+                    b.ToTable("ApplicationCategory");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.ApplicationHost", b =>
@@ -122,7 +125,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("HostId");
 
-                    b.ToTable("ApplicationHost", (string)null);
+                    b.ToTable("ApplicationHost");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Category", b =>
@@ -143,7 +146,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category", (string)null);
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Furnisher", b =>
@@ -192,7 +195,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Furnisher", (string)null);
+                    b.ToTable("Furnisher");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Host", b =>
@@ -263,7 +266,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("LocalisationId");
 
-                    b.ToTable("Hosts", (string)null);
+                    b.ToTable("Hosts");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.IpAddress", b =>
@@ -293,7 +296,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("VlanId");
 
-                    b.ToTable("IpAddress", (string)null);
+                    b.ToTable("IpAddress");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.IpSegment", b =>
@@ -318,7 +321,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("IpSegment", (string)null);
+                    b.ToTable("IpSegment");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Licence", b =>
@@ -344,7 +347,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Licence", (string)null);
+                    b.ToTable("Licence");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Localisation", b =>
@@ -373,7 +376,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("ParentId");
 
-                    b.ToTable("Localisation", (string)null);
+                    b.ToTable("Localisation");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Script", b =>
@@ -411,7 +414,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Script", (string)null);
+                    b.ToTable("Script");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Service", b =>
@@ -446,7 +449,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("IpAddressId");
 
-                    b.ToTable("Service", (string)null);
+                    b.ToTable("Service");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.User", b =>
@@ -471,7 +474,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User", (string)null);
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.Vlan", b =>
@@ -501,7 +504,7 @@ namespace Documentation_back_end.Migrations
 
                     b.HasIndex("IpSegmentId");
 
-                    b.ToTable("Vlan", (string)null);
+                    b.ToTable("Vlan");
                 });
 
             modelBuilder.Entity("Documentation_back_end.Domain.AccessMethod", b =>

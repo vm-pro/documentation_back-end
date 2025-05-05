@@ -34,10 +34,11 @@ namespace Documentation_back_end.Domain
         public int? CategoryId { get; set; } // nullable
         public Category Category { get; set; }
 
-        public ICollection<Service> Services { get; set; }
+        public ICollection<Service>? Services { get; set; }
 
-        public ICollection<Script> Scripts { get; set; }
-
+        public ICollection<Script>? Scripts { get; set; }
+        public ICollection<ApplicationHost>? ApplicationHosts { get; set; }
+        public ICollection<AccessMethod> AccessMethods { get; set; }
 
     }
 }

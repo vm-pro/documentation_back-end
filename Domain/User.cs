@@ -16,6 +16,7 @@
 
         // Navigation properties
         public ICollection<Script>? Scripts { get; set; }
-        
+        public ICollection<AccessMethod> AccessMethods { get; set; }
+
     }
 }
