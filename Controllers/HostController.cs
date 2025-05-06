@@ -1,4 +1,5 @@
-﻿using Documentation_back_end.Service.Interfaces;
+﻿using Documentation_back_end.Domain.Dto;
+using Documentation_back_end.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,12 +31,27 @@ namespace Documentation_back_end.Controllers
             }
         }
         [AllowAnonymous]
-        [HttpPost("add")]
-        public async Task<IActionResult> Add(string name)
+        [HttpGet("getAllForGrid")]
+        public async Task<IEnumerable<HostShortDto>> GetAllForGrid()
         {
             try
             {
-                var result = await _hostService.Add(name);
+                return await _hostService.GetAllForGrid();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while getting all hosts for grid.");
+                return Enumerable.Empty<HostShortDto>();
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpPost("add")]
+        public async Task<IActionResult> Add([FromBody]HostAdding host)
+        {
+            try
+            {
+                var result = await _hostService.Add(host);
                 if (result is OkObjectResult okResult)
                 {
                     return okResult;

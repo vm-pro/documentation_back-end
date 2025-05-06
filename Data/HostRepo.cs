@@ -1,4 +1,6 @@
 ﻿using Documentation_back_end.Data.Interfaces;
+using Documentation_back_end.Domain;
+using Documentation_back_end.Domain.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,17 +17,27 @@ namespace Documentation_back_end.Data
         {
             return await _context.Hosts.ToListAsync();
         }
-        public async Task<IActionResult> Add(string name)
+        public async Task<IEnumerable<HostShortDto>> GetAllForGrid()
         {
-            var host = new Domain.Host
+            return await _context.Hosts.Select(h => new HostShortDto
             {
-                Name = name
-            };
-            _context.Hosts.Add(host);
+                Id = h.Id,
+                Name = h.Name,
+                Os = h.Os,
+                Role = h.Role,
+                IsVirtual = h.IsVirtual,
+                LastBackUp = h.LastBackUp,
+                Domain = h.Domain
+            }).ToListAsync();
+        }
+        public async Task<IActionResult> Add(Domain.Host newHost)
+        {
+           
+            _context.Hosts.Add(newHost);
             var response = await _context.SaveChangesAsync();
             if (response > 0)
             {
-                return new OkObjectResult(host);
+                return new OkObjectResult(newHost);
             }
             else
             {

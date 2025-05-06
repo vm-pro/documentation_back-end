@@ -43,20 +43,68 @@
         }
       }
     },
+    "/getAllForGrid": {
+      "get": {
+        "tags": [
+          "Host"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HostShortDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HostShortDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HostShortDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/add": {
       "post": {
         "tags": [
           "Host"
         ],
-        "parameters": [
-          {
-            "name": "name",
-            "in": "query",
-            "schema": {
-              "type": "string"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HostAdding"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HostAdding"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HostAdding"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -85,49 +133,141 @@
           }
         }
       }
-    },
-    "/WeatherForecast": {
-      "get": {
-        "tags": [
-          "WeatherForecast"
-        ],
-        "operationId": "GetWeatherForecast",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
     "schemas": {
+      "AccessMethod": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "hostId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "host": {
+            "$ref": "#/components/schemas/Host"
+          },
+          "type": {
+            "$ref": "#/components/schemas/AccessMethodType"
+          },
+          "port": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AccessMethodType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Application": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "licenceId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "licence": {
+            "$ref": "#/components/schemas/Licence"
+          },
+          "applicationCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "applicationCategory": {
+            "$ref": "#/components/schemas/ApplicationCategory"
+          },
+          "applicationHosts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApplicationHost"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApplicationCategory": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApplicationHost": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hostId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "host": {
+            "$ref": "#/components/schemas/Host"
+          },
+          "applicationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "application": {
+            "$ref": "#/components/schemas/Application"
+          },
+          "deploymentDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Category": {
         "type": "object",
         "properties": {
@@ -261,16 +401,18 @@
             "type": "string",
             "nullable": true
           },
-          "locationId": {
+          "localisationId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "localisation": {
             "$ref": "#/components/schemas/Localisation"
           },
           "furnisherId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "furnisher": {
             "$ref": "#/components/schemas/Furnisher"
@@ -295,6 +437,114 @@
             "items": {
               "$ref": "#/components/schemas/Script"
             },
+            "nullable": true
+          },
+          "applicationHosts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApplicationHost"
+            },
+            "nullable": true
+          },
+          "accessMethods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccessMethod"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HostAdding": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "isVirtual": {
+            "type": "boolean"
+          },
+          "os": {
+            "type": "string",
+            "nullable": true
+          },
+          "ramGb": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cpuCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "criticality": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "vsphereEnvironment": {
+            "type": "string",
+            "nullable": true
+          },
+          "domain": {
+            "type": "string",
+            "nullable": true
+          },
+          "model": {
+            "type": "string",
+            "nullable": true
+          },
+          "localisationId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "furnisherId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HostShortDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "os": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "isVirtual": {
+            "type": "boolean"
+          },
+          "lastBackUp": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "domain": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -379,6 +629,32 @@
               "$ref": "#/components/schemas/IpAddress"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Licence": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "beginning": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ending": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -539,6 +815,13 @@
               "$ref": "#/components/schemas/Script"
             },
             "nullable": true
+          },
+          "accessMethods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccessMethod"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -574,29 +857,6 @@
             "items": {
               "$ref": "#/components/schemas/IpAddress"
             },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "WeatherForecast": {
-        "type": "object",
-        "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
-            "type": "string",
             "nullable": true
           }
         },
