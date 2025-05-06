@@ -2,6 +2,7 @@
 {
     public class ApplicationServicePolice
     {
+        public int Id { get; set; }
         public int ApplicationId { get; set; }
         public Application Application { get; set; }
 

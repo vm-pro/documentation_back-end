@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Dev\\documentation_back-end\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\documentation_back-end\\Migrations\\20250506072241_DBSet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250506072241_DBSet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\applicationservicepolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\applicationservicepolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\localisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\localisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\accessmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\localisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\localisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\servicepolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\servicepolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\applicationhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\applicationhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\applicationservicepolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\applicationservicepolice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\domain\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,24 +82,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20250506072241_DBSet.cs",
+              "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Migrations\\20250506072241_DBSet.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250506072241_DBSet.cs",
+              "ToolTip": "C:\\Dev\\documentation_back-end\\Migrations\\20250506072241_DBSet.cs",
+              "RelativeToolTip": "Migrations\\20250506072241_DBSet.cs",
+              "ViewState": "AgIAAGICAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:22:42.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "C:\\Dev\\documentation_back-end\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T20:03:58.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ChangeLog.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\ChangeLog.cs",
               "RelativeDocumentMoniker": "Domain\\ChangeLog.cs",
@@ -103,12 +124,11 @@
               "RelativeToolTip": "Domain\\ChangeLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:14:52.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T13:14:52.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Monitoring.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Monitoring.cs",
               "RelativeDocumentMoniker": "Domain\\Monitoring.cs",
@@ -116,12 +136,11 @@
               "RelativeToolTip": "Domain\\Monitoring.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:14:24.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T13:14:24.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "HostTool.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\HostTool.cs",
               "RelativeDocumentMoniker": "Domain\\HostTool.cs",
@@ -129,12 +148,11 @@
               "RelativeToolTip": "Domain\\HostTool.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T11:30:27.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T11:30:27.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Tool.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Tool.cs",
               "RelativeDocumentMoniker": "Domain\\Tool.cs",
@@ -142,25 +160,24 @@
               "RelativeToolTip": "Domain\\Tool.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T11:29:58.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T11:29:58.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ApplicationServicePolice.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\ApplicationServicePolice.cs",
               "RelativeDocumentMoniker": "Domain\\ApplicationServicePolice.cs",
               "ToolTip": "C:\\Dev\\documentation_back-end\\Domain\\ApplicationServicePolice.cs",
               "RelativeToolTip": "Domain\\ApplicationServicePolice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T11:29:32.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Template.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Template.cs",
               "RelativeDocumentMoniker": "Domain\\Template.cs",
@@ -168,12 +185,11 @@
               "RelativeToolTip": "Domain\\Template.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:22:49.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T09:22:49.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Document.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Document.cs",
               "RelativeDocumentMoniker": "Domain\\Document.cs",
@@ -181,12 +197,11 @@
               "RelativeToolTip": "Domain\\Document.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:17:06.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T09:17:06.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\User.cs",
               "RelativeDocumentMoniker": "Domain\\User.cs",
@@ -194,12 +209,11 @@
               "RelativeToolTip": "Domain\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:00:37.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T09:00:37.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AccessMethod.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\AccessMethod.cs",
               "RelativeDocumentMoniker": "Domain\\AccessMethod.cs",
@@ -207,12 +221,11 @@
               "RelativeToolTip": "Domain\\AccessMethod.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:55:25.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T08:55:25.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Host.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Host.cs",
               "RelativeDocumentMoniker": "Domain\\Host.cs",
@@ -220,12 +233,11 @@
               "RelativeToolTip": "Domain\\Host.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA1wB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:39:44.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T08:39:44.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ApplicationHost.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\ApplicationHost.cs",
               "RelativeDocumentMoniker": "Domain\\ApplicationHost.cs",
@@ -233,12 +245,11 @@
               "RelativeToolTip": "Domain\\ApplicationHost.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:39:18.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T08:39:18.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Licence.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Licence.cs",
               "RelativeDocumentMoniker": "Domain\\Licence.cs",
@@ -246,16 +257,11 @@
               "RelativeToolTip": "Domain\\Licence.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T07:36:38.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-05-05T07:36:38.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ServicePolice.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\ServicePolice.cs",
               "RelativeDocumentMoniker": "Domain\\ServicePolice.cs",
@@ -263,12 +269,11 @@
               "RelativeToolTip": "Domain\\ServicePolice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T11:59:03.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T11:59:03.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Application.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Application.cs",
               "RelativeDocumentMoniker": "Domain\\Application.cs",
@@ -276,8 +281,7 @@
               "RelativeToolTip": "Domain\\Application.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAzwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T07:34:25.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T07:34:25.157Z"
             },
             {
               "$type": "Document",
@@ -294,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ApplicationCategory.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\ApplicationCategory.cs",
               "RelativeDocumentMoniker": "Domain\\ApplicationCategory.cs",
@@ -302,8 +306,7 @@
               "RelativeToolTip": "Domain\\ApplicationCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T07:38:38.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T07:38:38.726Z"
             }
           ]
         }
