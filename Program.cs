@@ -31,6 +31,7 @@ namespace Documentation_back_end
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                     });
+               
             });
             builder.Services.AddScoped<IHostService, HostService>();
             builder.Services.AddScoped<IHostRepo, HostRepo>();

@@ -1,4 +1,5 @@
 ﻿
+using Documentation_back_end.Controllers;
 using Documentation_back_end.Data.Interfaces;
 using Documentation_back_end.Domain.Dto;
 using Documentation_back_end.Service.Interfaces;
@@ -16,7 +17,7 @@ namespace Documentation_back_end.Service
         {
             return await _hostRepository.GetAll();
         }
-        public async Task<IEnumerable<HostShortDto>> GetAllForGrid()
+        public async Task<IEnumerable<HostDto>> GetAllForGrid()
         {
             return await _hostRepository.GetAllForGrid();
         }
@@ -41,6 +42,31 @@ namespace Documentation_back_end.Service
             };
             return await _hostRepository.Add(newHost);
         }
+
+        public async Task<IActionResult> Update(int id, HostUpd host)
+        {
+            var existingHost = await _hostRepository.GetById(host.id);
+            if (existingHost == null)
+            {
+                return new NotFoundResult();
+            }
+            existingHost.Name = host.Name;
+            existingHost.IsVirtual = host.IsVirtual;
+            existingHost.Os = host.Os;
+            existingHost.RamGb = host.RamGb;
+            existingHost.CpuCount = host.CpuCount;
+            existingHost.Criticality = host.Criticality;
+            existingHost.Role = host.Role;
+            existingHost.CategoryId = host.CategoryId;
+            existingHost.VsphereEnvironment = host.VsphereEnvironment;
+            existingHost.Domain = host.Domain;
+            existingHost.Model = host.Model;
+            existingHost.LocalisationId = host.LocalisationId;
+            existingHost.FurnisherId = host.FurnisherId;
+            return await _hostRepository.Update(existingHost);
+        }
+
+
         public async Task<IActionResult> Delete(int id)
         {
             return await _hostRepository.Delete(id);
