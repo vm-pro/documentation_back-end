@@ -74,16 +74,11 @@
   {
     "ContainingType": "Documentation_back_end.Controllers.HostController",
     "Method": "Update",
-    "RelativePath": "update/{id}",
+    "RelativePath": "update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
       {
         "Name": "host",
         "Type": "Documentation_back_end.Controllers.HostUpd",

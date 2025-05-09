@@ -60,7 +60,7 @@ namespace Documentation_back_end.Data
         }
         public async Task<IActionResult> Update(Domain.Host host)
         {
-           
+            _context.Hosts.Update(host);
             var response = await _context.SaveChangesAsync();
             if (response > 0)
             {

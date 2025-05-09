@@ -80,8 +80,8 @@ namespace Documentation_back_end.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPut("update/{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] HostUpd host)
+        [HttpPut("update")]
+        public async Task<IActionResult> Update([FromBody] HostUpd host)
         {
             try
             {
@@ -89,7 +89,7 @@ namespace Documentation_back_end.Controllers
                 {
                     return BadRequest("Host is null");
                 }
-                var result = await _hostService.Update(id, host);
+                var result = await _hostService.Update(host);
                 if (result is OkObjectResult okResult)
                 {
                     return okResult;

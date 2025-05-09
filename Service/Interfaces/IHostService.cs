@@ -9,7 +9,7 @@ namespace Documentation_back_end.Service.Interfaces
         Task<IEnumerable<Domain.Host>> GetAll();
         Task<IEnumerable<HostDto>> GetAllForGrid();
         Task<IActionResult> Add(HostAdding host);
-        Task<IActionResult> Update(int id, HostUpd host);
+        Task<IActionResult> Update(HostUpd host);
         Task<IActionResult> Delete(int id);
     }
 }

@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Dev\\documentation_back-end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\controllers\\hostupd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:controllers\\hostupd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\data\\hostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:data\\hostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\service\\hostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:service\\hostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\data\\hostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:data\\hostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\data\\interfaces\\ihostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:data\\interfaces\\ihostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\controllers\\hostupd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:controllers\\hostupd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\service\\interfaces\\ihostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,6 +31,10 @@
       "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:domain\\dto\\hostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\data\\interfaces\\ihostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:data\\interfaces\\ihostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|c:\\dev\\documentation_back-end\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42836356-0D32-4BCC-A7BE-E4FED8DF686E}|Documentation_back-end.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,33 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HostController.cs",
-              "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Controllers\\HostController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HostController.cs",
-              "ToolTip": "C:\\Dev\\documentation_back-end\\Controllers\\HostController.cs",
-              "RelativeToolTip": "Controllers\\HostController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T07:42:53.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HostRepo.cs",
-              "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Data\\HostRepo.cs",
-              "RelativeDocumentMoniker": "Data\\HostRepo.cs",
-              "ToolTip": "C:\\Dev\\documentation_back-end\\Data\\HostRepo.cs",
-              "RelativeToolTip": "Data\\HostRepo.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAQwDwAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T08:13:02.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "IHostRepo.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Data\\Interfaces\\IHostRepo.cs",
               "RelativeDocumentMoniker": "Data\\Interfaces\\IHostRepo.cs",
@@ -88,8 +62,7 @@
               "RelativeToolTip": "Data\\Interfaces\\IHostRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T08:25:22.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T08:25:22.687Z"
             },
             {
               "$type": "Document",
@@ -97,22 +70,48 @@
               "Title": "HostService.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Service\\HostService.cs",
               "RelativeDocumentMoniker": "Service\\HostService.cs",
-              "ToolTip": "C:\\Dev\\documentation_back-end\\Service\\HostService.cs",
-              "RelativeToolTip": "Service\\HostService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDUAAAAmAAAAAAAAAA==",
+              "ToolTip": "C:\\Dev\\documentation_back-end\\Service\\HostService.cs*",
+              "RelativeToolTip": "Service\\HostService.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwEMAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T08:10:30.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HostRepo.cs",
+              "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Data\\HostRepo.cs",
+              "RelativeDocumentMoniker": "Data\\HostRepo.cs",
+              "ToolTip": "C:\\Dev\\documentation_back-end\\Data\\HostRepo.cs",
+              "RelativeToolTip": "Data\\HostRepo.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAzwEgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T08:13:02.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "HostController.cs",
+              "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Controllers\\HostController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HostController.cs",
+              "ToolTip": "C:\\Dev\\documentation_back-end\\Controllers\\HostController.cs*",
+              "RelativeToolTip": "Controllers\\HostController.cs*",
+              "ViewState": "AgIAAEQAAAAAAAAAAAApwFsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:42:53.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IHostService.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Service\\Interfaces\\IHostService.cs",
               "RelativeDocumentMoniker": "Service\\Interfaces\\IHostService.cs",
-              "ToolTip": "C:\\Dev\\documentation_back-end\\Service\\Interfaces\\IHostService.cs",
-              "RelativeToolTip": "Service\\Interfaces\\IHostService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "ToolTip": "C:\\Dev\\documentation_back-end\\Service\\Interfaces\\IHostService.cs*",
+              "RelativeToolTip": "Service\\Interfaces\\IHostService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T08:10:48.902Z",
               "EditorCaption": ""
@@ -137,7 +136,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "HostAdding.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Dto\\HostAdding.cs",
               "RelativeDocumentMoniker": "Domain\\Dto\\HostAdding.cs",
@@ -150,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "HostDto.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Domain\\Dto\\HostDto.cs",
               "RelativeDocumentMoniker": "Domain\\Dto\\HostDto.cs",
@@ -163,13 +162,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "HostUpd.cs",
               "DocumentMoniker": "C:\\Dev\\documentation_back-end\\Controllers\\HostUpd.cs",
               "RelativeDocumentMoniker": "Controllers\\HostUpd.cs",
               "ToolTip": "C:\\Dev\\documentation_back-end\\Controllers\\HostUpd.cs",
               "RelativeToolTip": "Controllers\\HostUpd.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T14:20:29.636Z",
               "EditorCaption": ""

@@ -43,13 +43,14 @@ namespace Documentation_back_end.Service
             return await _hostRepository.Add(newHost);
         }
 
-        public async Task<IActionResult> Update(int id, HostUpd host)
+        public async Task<IActionResult> Update(HostUpd host)
         {
             var existingHost = await _hostRepository.GetById(host.id);
             if (existingHost == null)
             {
                 return new NotFoundResult();
             }
+            
             existingHost.Name = host.Name;
             existingHost.IsVirtual = host.IsVirtual;
             existingHost.Os = host.Os;
@@ -63,6 +64,7 @@ namespace Documentation_back_end.Service
             existingHost.Model = host.Model;
             existingHost.LocalisationId = host.LocalisationId;
             existingHost.FurnisherId = host.FurnisherId;
+            existingHost.LastBackUp = host.LastBackUp;
             return await _hostRepository.Update(existingHost);
         }
 
