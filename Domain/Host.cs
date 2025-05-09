@@ -25,10 +25,10 @@ namespace Documentation_back_end.Domain
         public string Model { get; set; }
 
 
-        public int LocationId { get; set; }
+        public int? LocalisationId { get; set; }
         public Localisation Localisation { get; set; }
 
-        public int FurnisherId { get; set; }
+        public int? FurnisherId { get; set; }
         public Furnisher Furnisher { get; set; }
 
         public int? CategoryId { get; set; } // nullable
@@ -38,7 +38,7 @@ namespace Documentation_back_end.Domain
 
         public ICollection<Script>? Scripts { get; set; }
         public ICollection<ApplicationHost>? ApplicationHosts { get; set; }
-        public ICollection<AccessMethod> AccessMethods { get; set; }
+        public ICollection<AccessMethod>? AccessMethods { get; set; }
 
     }
 }

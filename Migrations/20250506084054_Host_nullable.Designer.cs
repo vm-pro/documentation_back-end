@@ -4,6 +4,7 @@ using Documentation_back_end.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Documentation_back_end.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250506084054_Host_nullable")]
+    partial class Host_nullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -326,7 +329,10 @@ namespace Documentation_back_end.Migrations
                     b.Property<DateTime?>("LastBackUp")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int?>("LocalisationId")
+                    b.Property<int>("LocalisationId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("LocationId")
                         .HasColumnType("int");
 
                     b.Property<string>("Model")
@@ -845,7 +851,9 @@ namespace Documentation_back_end.Migrations
 
                     b.HasOne("Documentation_back_end.Domain.Localisation", "Localisation")
                         .WithMany("Hosts")
-                        .HasForeignKey("LocalisationId");
+                        .HasForeignKey("LocalisationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Category");
 
